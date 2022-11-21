@@ -1068,11 +1068,12 @@ class _OrderWidgetState extends StateMVC<OrderWidget> {
   static Future<void> openMap(double latitude, double longitude) async {
     print("Latitude............" + latitude.toString());
     String googleUrl = 'https://www.google.com/maps/search/?api=1&query=$latitude,$longitude';
-    if (await canLaunch(googleUrl)) {
+    //if (await canLaunch(googleUrl)) {
       await launch(googleUrl);
-    } else {
-      throw 'Could not open the map.';
-    }
+    //}
+    // else {
+    //   throw 'Could not open the map.';
+    // }
   }
   _dialogforCancel(BuildContext context) {
     return showDialog(

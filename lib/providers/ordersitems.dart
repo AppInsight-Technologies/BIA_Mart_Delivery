@@ -469,6 +469,12 @@ class OrdersItemsList with ChangeNotifier {
             "mobile": mobile,
           }
       );
+      print("restaurant/delivery-boy-status after delivery...."+url.toString());
+      print("Param..."+{ // await keyword is used to wait to this operation is complete.
+        "id": orderid,
+        "status": "4",
+        "mobile": mobile,
+      }.toString());
       final responseJson = json.decode(response.body);
       /*if(responseJson.toString() != "[]"){
 

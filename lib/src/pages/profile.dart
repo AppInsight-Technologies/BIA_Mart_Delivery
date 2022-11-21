@@ -35,7 +35,7 @@ class _ProfileWidgetState extends StateMVC<ProfileWidget> {
     Future.delayed(Duration.zero, () async {
       SharedPreferences prefs = await SharedPreferences.getInstance();
       setState(() {
-        name = prefs.getString("first_name") + " " + prefs.getString("last_name");
+        name = prefs.getString("firstName") + " " + prefs.getString("lastName");
         email = prefs.getString("email");
         address = prefs.getString("address");
         wallet = prefs.getString("wallet_balance");

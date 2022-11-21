@@ -108,9 +108,9 @@ class _LoginWidgetState extends StateMVC<LoginWidget> {
         );
         print("id1.........." + data[0]['id'].toString());
         prefs.setString('id', data[0]['id'].toString());
-        prefs.setString('firstName', data[0]['firstName'].toString());
-        prefs.setString('lastName', data[0]['lastName'].toString());
-        prefs.setString('mobileNumber', data[0]['mobileNumber'].toString());
+        prefs.setString('first_name', data[0]['first_name'].toString());
+        prefs.setString('last_name', data[0]['last_name'].toString());
+        prefs.setString('mobile_number', data[0]['mobile_number'].toString());
         prefs.setString('email', data[0]['email'].toString());
         prefs.setString('address', data[0]['address'].toString());
         prefs.setString("login_status", "true");
